@@ -5,8 +5,9 @@ def converter_unidades():
     escolha = int(input("Escolha uma conversão (1-2): "))
     
     if escolha == 1:
-        #COMPLETE O CÓDIGO
-        pass
+        metros = float(input("Digite a quantidade em metros: "))
+        km = metros / 1000
+        print(f"{metros} metros são {km:.2f} quilômetros.")
     elif escolha == 2:
         celsius = float(input("Digite a temperatura em Celsius: "))
         fahrenheit = (celsius * 9/5) + 32
