@@ -4,8 +4,8 @@ def conversor_moedas():
     taxa_euro = 6.00   # Exemplo de taxa de câmbio
 
     #REMOVER OS 0s E COMPLETAR A CONVERSÃO
-    valor_dolar = 0
-    valor_euro = 0
+    valor_dolar = valor_reais / taxa_euro
+    valor_euro = valor_reais / taxa_dolar
 
     print(f"Valor em dólares: {valor_dolar:.2f}")
     print(f"Valor em euros: {valor_euro:.2f}")
